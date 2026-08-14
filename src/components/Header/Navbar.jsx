@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Info from "./Info.jsx"
 import { ChevronDown } from "lucide-react";
 
@@ -15,7 +16,9 @@ const Navbar = () => {
                 <ul className="flex justify-start items-center gap-14  text-[#2f3542] font-semibold">
 
                     <div>
-                        <img src='/logo/victora-logo.jpg' alt='victora-logo' />
+                        <Link to='/'>
+                            <img src='/logo/victora-logo.png' alt='victora-logo' />
+                        </Link>
                     </div>
 
                     {/* COMPANY */}
@@ -30,35 +33,35 @@ const Navbar = () => {
                         <ul className="absolute left-0 top-10 w-56 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50">
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                About Us
+                                <Link to='/about-us'>About Us</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Vision & Mission
+                                <Link to='/vission-mission'>Vision & Mission</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Leadership
+                                <Link to='/leadership'>Leadership</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Our Journey
+                                <Link to='/our-journey'>Our Journey</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition rounded-b-lg">
-                                Certifications
+                                <Link to='/certifications'>Certifications</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition rounded-b-lg">
-                                Key Milestones
+                                <Link to='/key-milestones'>Key Milestones</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition rounded-b-lg">
-                                Manufacturing Process
+                                <Link to='/manufacturing-process'>Manufacturing Process</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition rounded-b-lg">
-                                Future Plans
+                                <Link to='/future-plans'>Future Plans</Link>
                             </li>
                         </ul>
                     </li>
@@ -103,15 +106,15 @@ const Navbar = () => {
                     </li>
 
                     <li className="cursor-pointer hover:text-blue-700 transition-colors duration-300">
-                        QUALITY
+                        <Link to='/quality'>QUALITY</Link>
                     </li>
 
                     <li className="cursor-pointer hover:text-blue-700 transition-colors duration-300">
-                        CUSTOMERS
+                        <Link to='/customers'>CUSTOMERS</Link>
                     </li>
 
                     <li className="cursor-pointer hover:text-blue-700 transition-colors duration-300">
-                        CSR
+                        <Link to='/csr'>CSR</Link>
                     </li>
 
                     <li className="relative group cursor-pointer">
@@ -126,27 +129,27 @@ const Navbar = () => {
                         <ul className="absolute left-0 top-10 w-64 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50">
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Location
+                                <Link to='/location'>Location</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Business Enquiries
+                                <Link to='/business-enquries'>Business Enquiries</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Careers
+                                <Link to='/careers'>Careers</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Supply to us
+                               <Link to='/supply-to-us'>Supply to us</Link> 
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition rounded-b-lg">
-                                Driving Directions
+                                <Link to='/driving-directions'>Driving Directions</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition rounded-b-lg">
-                                ELevator Mfg.
+                                <Link to='/elevator-mfg'>Elevator Mfg.</Link>
                             </li>
 
                         </ul>
