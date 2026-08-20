@@ -20,6 +20,13 @@ import SupplyToUsPage from "./components/pageComponents/SupplyToUsPage.jsx"
 import SuppyToUS from "./pages/SupplyToUs.jsx"
 import DrivingDirection from "./pages/DrivingDirections.jsx"
 import ElevatorMfg from "./pages/ElevatorMfg.jsx"
+import ToolRoom from "./pages/ToolRoom.jsx"
+import WeldShop from "./pages/WeldShop.jsx"
+import PressShop from "./pages/PressShop.jsx"
+import FlexibleMfg from "./pages/FlexibleMfg.jsx"
+import ToolDesign from "./pages/ToolDesign.jsx"
+import Blogs from "./pages/Blogs.jsx"
+import BlogDetails from "./pages/BlogDetails.jsx"
 
 function App() {
 
@@ -47,6 +54,15 @@ function App() {
         <Route path='/supply-to-us' element={<SuppyToUS />} />
         <Route path='/driving-directions' element={<DrivingDirection />} />
         <Route path='/elevator-mfg' element={<ElevatorMfg />} />
+
+        <Route path='/tool-room' element={<ToolRoom />} />
+        <Route path='/weld-shop' element={<WeldShop />} />
+        <Route path='/press-shop' element={<PressShop />} />
+        <Route path='/flexible-mfg' element={<FlexibleMfg />} />
+        <Route path='/tool-design' element={<ToolDesign />} />
+
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/blogs/:urlSlug' element={<BlogDetails />} />
       </Routes>
       <Footer />
     </>

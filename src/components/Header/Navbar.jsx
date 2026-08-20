@@ -79,27 +79,23 @@ const Navbar = () => {
                         <ul className="absolute left-0 top-10 w-64 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50">
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Press Shop
+                                <Link to='/press-shop'>Press Shop</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Weld Shop
+                                <Link to='/weld-shop'>Weld Shop</Link> 
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Flexible Mfg.
+                                 <Link to='/flexible-mfg'>Flexible Mfg</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition">
-                                Tool Design
+                                <Link to='/tool-design'>Tool Design</Link>
                             </li>
 
                             <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition rounded-b-lg">
-                                Tool Room
-                            </li>
-
-                            <li className="px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition rounded-b-lg">
-                                ELevator Mfg.
+                                 <Link to='/tool-room'>Tool Room</Link>
                             </li>
 
                         </ul>
@@ -153,6 +149,10 @@ const Navbar = () => {
                             </li>
 
                         </ul>
+                    </li>
+
+                    <li className="cursor-pointer hover:text-blue-700 transition-colors duration-300">
+                        <Link to='/blogs'>BLOGS</Link>
                     </li>
 
                 </ul>
